@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container container-fluid">
     <div class="jumbotron text-center">
       <h1>Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
@@ -44,44 +44,18 @@
 
     <h3>Mars Hemisphere</h3>
     <hr>
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src={{ info.hemisphere_images[0].image_url }} style="max-width:100%; max-height:100%;">
-          <div class="card-body">
-            <h5 class="card-title">{{ info.hemisphere_images[0].title }} Hemisphere</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src={{ info.hemisphere_images[1].image_url }} style="max-width:100%; max-height:100%;">
-          <div class="card-body">
-            <h5 class="card-title">{{ info.hemisphere_images[1].title }} Hemisphere</h5>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src={{ info.hemisphere_images[2].image_url }} style="max-width:100%; max-height:100%;">
-          <div class="card-body">
-            <h5 class="card-title">{{ info.hemisphere_images[2].title }} Hemisphere</h5>
+      {% for x in range(0,4) %}
+        <div class="col-md-6 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src={{ info.hemisphere_images[x].image_url }} style="max-width:100%; max-height:100%;">
+            <div class="card-body">
+              <h4 class="card-title">{{ info.hemisphere_images[x].title }} Hemisphere</h4>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="card">
-          <img class="card-img-top" src={{ info.hemisphere_images[3].image_url }} style="max-width:100%; max-height:100%;">
-          <div class="card-body">
-            <h5 class="card-title">{{ info.hemisphere_images[3].title }} Hemisphere</h5>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
   </div>

@@ -53,7 +53,10 @@ def scrape():
     url4 = 'https://space-facts.com/mars/'
     tables = pd.read_html(url4)
     df = tables[0]
-    mars_data_html_table = df.to_html(index=False)
+    df.columns = df.columns.map(str)
+    df = df.set_index("0")
+    df = df.rename(columns={"1":"Value"})
+    mars_data_html_table = df.to_html()
 
     # opens up new browswer in splinter
     url_hemispheres = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"

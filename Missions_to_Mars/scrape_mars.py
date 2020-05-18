@@ -42,7 +42,7 @@ def scrape():
 
     url3 = 'https://twitter.com/marswxreport?lang=en'
     browser.visit(url3)
-    time.sleep(5)
+    time.sleep(30)
     # HTML object
     html = browser.html
     # Parse HTML with Beautiful Soup

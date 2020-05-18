@@ -84,8 +84,8 @@ def scrape():
         img_var = base_url2 + src
         section = soup.find('section', class_="metadata")
         name = section.h2.text
-        name = name.split()
-        hemisphere_image_urls.append({"title": name[0], "image_url": img_var})
+        name = name.rsplit(' ', 1)[0]
+        hemisphere_image_urls.append({"title": name, "image_url": img_var})
         return hemisphere_image_urls
 
     # Parse HTML with Beautiful Soup

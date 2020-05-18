@@ -53,7 +53,7 @@ def scrape():
     url4 = 'https://space-facts.com/mars/'
     tables = pd.read_html(url4)
     df = tables[0]
-    mars_data_html_table = df.to_html()
+    mars_data_html_table = df.to_html(index=False)
 
     # opens up new browswer in splinter
     url_hemispheres = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
@@ -61,7 +61,10 @@ def scrape():
     time.sleep(1)
     # HTML object
     html = browser.html
+    # Parse HTML with Beautiful Soup
+    soup = BeautifulSoup(html, 'html.parser')
     hemisphere_image_urls = []
+    base_url2 = "https://astrogeology.usgs.gov"
     all_hem_names = soup.find_all('div', class_="description")
     list_hem = []
     for hem in all_hem_names:
@@ -97,7 +100,7 @@ def scrape():
         "featured_image": featured_image_url,
         "mars_weather": mars_weather,
         "mars_data_table": mars_data_html_table,
-        "hemisphere_iamges": hemisphere_image_urls
+        "hemisphere_images": hemisphere_image_urls
     }
 
     # Close the browser after scraping

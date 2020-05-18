@@ -21,15 +21,67 @@
     <p>{{ info.news_paragraph }} </p>
 
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-7 col-sm-12">
         <h3>Featured Mars Image</h3>
         <img src={{ info.featured_image }} style="max-width:100%; max-height:100%;">
       </div>
 
-      <div class="col-md-5">
+      <div class="col-md-5 col-sm-12">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Current Weather On Mars</h3>
+            <p>{{ info.mars_weather }}</p>
+          </div>
 
+          <div class="col-md-12">
+            <h3>Mars Facts</h3>
+            <div>{{ info.mars_data_table|safe }}</div>
+          </div>
+        </div>
       </div>
 
+    </div>
+
+    <h3>Mars Hemisphere</h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src={{ info.hemisphere_images[0].image_url }} style="max-width:100%; max-height:100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{ info.hemisphere_images[0].title }} Hemisphere</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src={{ info.hemisphere_images[1].image_url }} style="max-width:100%; max-height:100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{ info.hemisphere_images[1].title }} Hemisphere</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src={{ info.hemisphere_images[2].image_url }} style="max-width:100%; max-height:100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{ info.hemisphere_images[2].title }} Hemisphere</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="card">
+          <img class="card-img-top" src={{ info.hemisphere_images[3].image_url }} style="max-width:100%; max-height:100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{ info.hemisphere_images[3].title }} Hemisphere</h5>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>

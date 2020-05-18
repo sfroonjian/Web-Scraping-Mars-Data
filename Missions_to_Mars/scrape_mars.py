@@ -56,6 +56,7 @@ def scrape():
     df.columns = df.columns.map(str)
     df = df.set_index("0")
     df = df.rename(columns={"1":"Value"})
+    df.index.rename('Description', inplace=True)
     mars_data_html_table = df.to_html()
 
     # opens up new browswer in splinter

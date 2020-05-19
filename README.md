@@ -12,9 +12,9 @@ There are so many websites about interesting information about Mars, and new inf
 1. Click the "Scrap New Data Button" on the web page. It will take about a minute for the scraping to complete, and then the results will appear on the web page.
 
 ### Data collected:
-![](screenshots/screenshot1.png)
-![](screenshots/screenshot2.png)
-![](screenshots/screenshot3.png)
+![](Missions_to_Mars/screenshots/screenshot1.png)
+![](Missions_to_Mars/screenshots/screenshot2.png)
+![](Missions_to_Mars/screenshots/screenshot3.png)
 
 ### Why the data is displayed this way:
 Cohesive ata was scraped from multiple different web pages, so I madde a web page of my own to neatly display all of it. I used Boostrap formatting and grids to make the page more visually appealing and responsive with all screen sizes.

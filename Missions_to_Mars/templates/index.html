@@ -5,17 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- name of tab -->
   <title>Mission to Mars</title>
+  <!-- links to bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container">
     <div class="jumbotron text-center">
+      <!-- page title -->
       <h1>Mission to Mars</h1>
+      <!-- scrape button -->
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
 
+    <!-- title and description of latest mars info using jinja to import data from database -->
     <h3>Latest Mars News</h3>
     <h4>{{ info.news_title }}</h3>
     <p>{{ info.news_paragraph }} </p>
@@ -23,6 +28,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <h3>Featured Mars Image</h3>
+        <!-- featured mars image using jinja to import data from database -->
         <img src={{ info.featured_image }} style="max-width:100%; max-height:100%;">
       </div>
 
@@ -30,11 +36,13 @@
         <div class="row">
           <div class="col-md-12">
             <h3>Current Weather On Mars</h3>
+            <!-- latest mars weather from twitter using jinja to import data from database -->
             <p>{{ info.mars_weather }}</p>
           </div>
 
           <div class="col-md-12">
             <h3>Mars Facts</h3>
+            <!-- table of mars facts using jinja to import data from database -->
             <div>{{ info.mars_data_table|safe }}</div>
           </div>
         </div>
@@ -45,6 +53,7 @@
     <h3 style="text-align: center;">Mars Hemispheres</h3>
     <hr>
 
+    <!-- creates a card for each hemisphere image and title -->
     <div class="row">
       {% for x in range(0,4) %}
         <div class="col-md-6 col-sm-12">

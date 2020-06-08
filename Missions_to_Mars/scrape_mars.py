@@ -7,9 +7,13 @@ import time
 import pandas as pd
 
 def init_browser():
-    # @NOTE: Replace the path with your actual path to the chromedriver
+    # activate splinter; NOTE: Replace the path with your actual path to the chromedriver
     executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
     return Browser("chrome", **executable_path, headless=False)
+
+    # Window Users- comment out the 2 lines above, and uncomment the 2 lines below
+    # executable_path = {'executable_path': 'chromedriver.exe'}
+    # browser = Browser('chrome', **executable_path, headless=False)
 
 
 def scrape():

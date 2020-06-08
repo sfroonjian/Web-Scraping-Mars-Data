@@ -9,7 +9,7 @@ There are so many websites about interesting information about Mars, and new inf
 1. Run the command "python scrape_mars.py".
 1. Run the command "python app.py".
 1. Open your browser and go to "http://localhost:5000/".
-1. Click the "Scrap New Data Button" on the web page. It will take about a minute for the scraping to complete, and then the results will appear on the web page.
+1. Click the "Scrap New Data Button" on the web page. It will take about a few minutes for the scraping to complete, and then the results will appear on the web page.
 
 ### Data collected:
 ![](Missions_to_Mars/screenshots/screenshot1.png)

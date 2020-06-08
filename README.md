@@ -1,5 +1,5 @@
 ### Problem this project to trying to solve:
-There are so many websites that contain interesting information about Mars, and new information is added to many of those websites every day. The purpose of this project is to create a web page that scrapes several websites to gather the latest data on Mars every time you click the button so users can stay up to do on Mars latest news/information.
+There are so many websites that contain interesting information about Mars, and new information is added to many of those websites every day. The purpose of this project is to create a web page that scrapes several websites to gather the latest data on Mars every time you click a button so users can stay up to do on latest Mars news/information.
 
 ### How to run the code:
 1. Save all the files of the respository (except the files in the screenshots folder) to a folder on your computer.

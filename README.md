@@ -17,4 +17,4 @@ There are so many websites about interesting information about Mars, and new inf
 ![](Missions_to_Mars/screenshots/screenshot3.png)
 
 ### Why the data is displayed this way:
-Cohesive ata was scraped from multiple different web pages, so I madde a web page of my own to neatly display all of it. I used Boostrap formatting and grids to make the page more visually appealing and responsive with all screen sizes.
+Cohesive data was scraped from multiple different web pages, so I madde a web page of my own to neatly display all of it. I used Boostrap formatting and grids to make the page more visually appealing and responsive with all screen sizes.

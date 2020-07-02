@@ -4,8 +4,8 @@ There are so many websites that contain interesting information about Mars, and 
 ### How to run the code:
 1. Save all the files of the respository (except the files in the screenshots folder) to a folder on your computer.
     1. If you are using Windows, in the scrape_mars.py file, you will need to uncomment the 2 lines where it says to uncomment, and comment out the 2 lines about that.
-1. Open you terminal.
-1. cd into the folder you saved the files in.
+1. Run Mongo in your terminal.
+1. In a seperate terminal window, cd into the folder you saved the files in.
 1. Run the command "python scrape_mars.py".
 1. Run the command "python app.py".
 1. Open your browser and go to "http://localhost:5000/".
